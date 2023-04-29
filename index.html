@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31prchbo</title>
+
+    <link rel="icon" type="image/x-icon" href="images/group7.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main id="main">
+        <ul id="sticky_menu" class="main_sticky_menu hidden">
+            <a href="#main" class="sticky_menu_container">
+                <img class="sticky_menu_logo" src="images/logo0.png" alt="logo">
+                <span class="sticky_menu_logo_title">31. PRCHBO</span>
+            </a>
+            <div class="sticky_menu_links_container">
+                <li><a href="#about">O NÁS</a></li>
+                <li><a href="#history">HISTORIE</a></li>
+                <li><a href="#">KARIÉRA</a></li>
+                <li><a href="#">KONTAKT</a></li>
+                <li><a href="#gallery">GALERIE</a></li>
+            </div>
+        </ul>
+        <div class="main_panel">
+            <div class="main_panel_title">
+                <picture class="title_logo_container">
+                    <img class="title_logo" src="images/logo0.png" alt="logo">
+                </picture>
+                <div class="main_panel_title_container">
+                    <h1>PLUK RADIAČNÍ, CHEMICKÉ A BIOLOGICKÉ OCHRANY</h1>
+                    <span class="main_panel_title_sub-title">generálmajora Oskara Starkoče</span>
+                </div>
+                
+            </div>
+            <picture class="main_socials_container">
+
+                <img class="main_socials" src="images/socials-fb-ig.png" alt="social-sites" usemap="#socialsmap">
+
+                <map name="socialsmap">
+                    <area class="area" 
+                            id="area1" 
+                            shape="circle" 
+                            coords="125,215, 50" 
+                            href="https://www.facebook.com/31prchbo" 
+                            target="_blank" 
+                            alt="wikipedia-link">
+
+                    <area class="area" 
+                            id="area2" 
+                            shape="circle" 
+                            coords="225,150,50" 
+                            href="https://www.instagram.com/31.pluk_liberec/" 
+                            target="_blank" 
+                            alt="youtube-link">
+                </map>
+            </picture>
+        </div>
+        <nav>
+            <ul class="main_navbar">
+                <li><a href="#about">O NÁS</a></li>
+                <li><a href="#history">HISTORIE</a></li>
+                <li><a href="#">KARIÉRA</a></li>
+                <li><a href="#">KONTAKT</a></li>
+                <li><a href="#gallery">GALERIE</a></li>
+            </ul>
+            
+        </nav>
+    </main>
+    <section id="about" class="about">
+        <div class="about_container">
+            <h2>O NÁS</h2>
+
+            <p class="about_text">
+                31. pluk radiační, chemické a biologické ochrany je specializovaný útvar Armády České republiky s dlouhou historií a tradicí v chemickém vojsku. Pluk se zaměřuje na plnění nejnáročnějších úkolů v oblasti chemického zabezpečení a ochrany proti zbraním hromadného ničení a radioaktivním a toxickým látkám. Jeho specializované služby zahrnují radiační a chemický průzkum, laboratorní analýzu, varování, dekontaminaci a zdravotnické ošetření. Pluk také vyčleňuje síly a prostředky pro operace v zahraničí a spolupracuje s orgány státní správy a místní samosprávy při organizaci vzdělávacích a školících aktivit ve prospěch civilní veřejnosti.
+            </p>
+
+            <button id="command_open_btn" class="command_open_btn">VELENÍ PLUKU <img class="icon_right" src="images/icon_right.png" alt="#"></button>
+
+            <div id="command_modal" class="command_modal hidden">
+                <div class="command_title_container">
+                    <h2 class="command_title">VELENÍ PLUKU</h2>
+                    <button id="command_close_btn" class="command_close_btn"></button>
+                </div>
+                <article class="commanders_container">
+                    <div class="commanding_officers">
+                        <img class="commander" src="images/velitel_ofiko.png" alt="velitel pluku">
+                        <p class="commanding_officers_top">Velitel Pluku</p>
+                        <p class="commanding_officers_bottom">plk. gšt. Ing. Martin FOKT</p>
+                    </div>
+
+                    <div class="commanding_officers">
+                        <img class="commander" src="images/zv_ofiko.png" alt="zástupce velitele pluku">
+                        <p class="commanding_officers_top">Zástupce velitele</p>
+                        <p class="commanding_officers_bottom">plk. gšt. Ing. Tomáš UNZEITIG</p>
+                    </div>
+
+                    <div class="commanding_officers">
+                        <img class="commander" src="images/ns_ofiko.png" alt="náčelník štábu">
+                        <p class="commanding_officers_top">Náčelník štábu</p>
+                        <p class="commanging_officers_bottom">pplk. gšt. Ing. Jan FIALA</p>
+                    </div>
+
+                    <div class="commanding_officers">
+                        <img class="commander" src="images/vrchni_ofiko.png" alt="vrchní praporčík">
+                        <p class="commanding_officers_top">Vrchní praporčík</p>
+                        <p class="commanding_officers_bottom">nprap. Pavel LIBICH</p>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+        
+    </section>
+
+    <section id="history" class="history">
+        <h2 class="history_title">HISTORIE</h2>
+        <div class="history_container">
+            <div class="history_selection_container">
+                <picture class="history_link history_chemical">
+                    <img id="chemicalHistory" role="button" tabIndex="0"  src="images/chem_vojsko.png" alt="chemické vojsko">
+                </picture>
+
+                <picture class="history_link history_liberec">
+                    <img id="liberecHistory" role="button" tabIndex="0" src="images/lbc_vojsko.png" alt="chemické vojsko v liberci">
+                </picture>
+                <picture class="history_link history_barracs">
+                    <img id="barracsHistory" role="button" tabIndex="0" src="images/kas_historie.png" alt="historie kasáren">
+                </picture>
+            </div>
+            <p id="history_content" class="history_content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea omnis aspernatur quis, nobis facilis odio possimus laudantium nihil suscipit eius veniam ducimus necessitatibus quae eaque magni at officiis et a! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>      
+            Commodi mollitia soluta consequuntur quas perferendis quos, accusamus dolores est distinctio ipsa delectus animi optio. Accusamus quasi dicta, illo vero obcaecati nulla? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <br><br> Autem, aperiam quasi praesentium ducimus obcaecati, soluta placeat ab suscipit sint at vero, recusandae dolorum ut eveniet veniam illo. Quaerat, omnis at?</p>
+        </div>
+        
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>GALERIE</h2>
+        <div class="gallery_image_box" id="gallery_image_box">
+            <button id="image_prev" class="image_prev"></button>
+            <img id="gallery_image_selected" src="" alt="">
+            <button id="image_next" class="image_next"></button>
+        </div>
+        <div class="gallery_container" id="gallery_container">
+
+        </div>
+    </section>
+
+    <a href="#main" id="scrollBtn" class="back-to-top"></a>
+</body>
+</html>

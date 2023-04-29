@@ -1,0 +1,350 @@
+@import 'maps.css';
+@import 'navbar.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
+:root {
+    --title: #D0D0D0;
+    --subTitle: #BCA582;
+    --text: #A3BA3D;
+    --textBasic: #FFFFFF;
+    --panel: hsla(193, 23%, 12%, 0.97);
+    --navBg: hsla(196, 82%, 6%, 0.627);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg-main.png) center no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.main_panel {
+    position: relative;
+    /* top: -50%; */
+    /* left: -10%; */
+    width: 30%;
+    max-width: 30rem;
+    height: 100%;
+    background: var(--panel);
+    /* transform: rotate(3deg); */
+}
+
+.main_panel_title {
+    /* position: absolute; */
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 56rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* background: var(--panel); */
+    opacity: .97;
+    padding: 1rem 4rem;
+    border-radius: .3rem;
+}
+
+.title_logo_container {
+    position: relative;
+}
+
+.title_logo_container::after {
+    content: "31.";
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 38%;
+    left: 29%;
+    font-family: inherit;
+    color: var(--title);
+    font-size: 3.5rem;
+    font-weight: bold;
+    background: #000000d4;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--title);
+}
+
+.main_panel_title_sub-title {
+    font-size: 1.5rem;
+    color: var(--subTitle)
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.main_socials_container {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 5rem;
+}
+
+.about {
+    position: relative;
+    background-image: url(images/shape.png), url(images/bg-about.png);
+    background-position: -10rem 0, center;
+    background-repeat: no-repeat;
+    background-size: 60rem, cover;
+
+}
+
+.about_container {
+    width: 60%;
+}
+
+h2 {
+    color: var(--text);
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 5rem;
+}
+
+.about_text {
+    font-size: 1.6rem;
+    color: var(--textBasic);
+    line-height: 2.3rem;
+}
+
+.command_open_btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: fit-content;
+
+    font-size: 1.6rem;
+    color: var(--textBasic);
+    padding: 1rem;
+    border: 4px solid var(--text);
+    border-radius: .3rem;
+    background: #a3ba3d29;
+    transition: transform 200ms ease;
+}
+
+.command_open_btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.command_modal {
+    position: absolute;
+    width: 80%;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    border-radius: .3rem;
+    padding: 4rem;
+    background-image: linear-gradient(0deg, rgba(15,18,14,1) 0%, rgba(52,61,42,1) 48%, rgba(15,18,14,1) 100%);
+
+    -webkit-box-shadow: 0px 0px 15px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 15px -4px rgb(0, 0, 0);
+    box-shadow: 0px 0px 15px -4px rgb(0, 0, 0);
+
+    
+    transition: opacity 150ms ease;
+}
+
+
+
+.command_title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.commanders_container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.commander {
+    min-width: 50%;
+    width: 80%;
+}
+
+.commanding_officers {
+    color: var(--textBasic);
+    text-align: center;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+ .commanding_officers_top, .commanding_officers_bottom {
+    margin-left: 1.2rem;
+}
+
+
+.command_close_btn {
+    background: url(images/vector_x.png) center no-repeat;
+    border: none;
+
+    width: 2rem;
+    height: 1.5rem;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    cursor: pointer;
+}
+
+
+.history {
+    background-image: url(images/shape_right.png), url(images/bg-history.png);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: -10rem 0, center;
+}
+
+.history_title {
+    text-align: right;
+}
+
+.history_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.history_selection_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -4rem;
+    margin: auto 0;
+
+    width: 30rem;
+}
+
+.history_link {
+    width: 20rem;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.history_link:hover::before {
+    content: url(images/icon_right.png);
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    top: 8.6rem;
+    right: -15rem;
+    filter: invert(1);
+    transition: 250ms ease;
+}
+
+.history_chemical::after, .history_liberec::after, .history_barracs::after {
+    font-size: 1.2rem;
+    color: var(--textBasic);
+    position: relative;
+    bottom: 11.8rem;
+    left: 19rem;
+    width: 6rem;
+    display: block;
+}
+
+.history_chemical::after {
+    content: "historie chemického vojska";
+}
+
+.history_liberec::after {
+    content: "historie vojsk v Liberci";
+}
+
+.history_barracs::after {
+    content: "historie kasáren";
+}
+
+
+.history_link:hover {
+    transform: scale(1.04);
+}
+
+.history_liberec {
+    align-self: flex-end;
+    /* z-index: 2; */
+}
+
+.history_liberec, .history_barracs {
+    margin-top: -4rem;
+}
+
+.history_content {
+    width: 50%;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: var(--textBasic);
+}
+
+.gallery {
+    background: url(images/bg_gallery.png);
+    background-size: cover;
+    text-align: center;
+}
+
+.gallery_container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(5rem, 15rem) );
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery_image_box {
+    display: none;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.image_prev, .image_next {
+    background: url(images/icon_right.png) center no-repeat;
+    filter: invert(100%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.image_prev {
+    transform: rotate(180deg) translateX(-50px);
+}
+
+.image_next {
+    transform: translateX(-50px);
+}

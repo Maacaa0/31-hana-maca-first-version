@@ -1,0 +1,28 @@
+.area {
+    background: #850000;
+    display: block;
+    height: 65px;
+    opacity: 0;
+    position: absolute;
+    width: 65px;
+    border-radius: 100%;
+}
+
+#area1 {
+    top: 11rem;
+    left: 5.6rem;
+}
+
+#area1:hover {
+    opacity: .3;
+}
+
+#area2 {
+    top: 7.25rem;
+    left: 11.8rem;
+
+}
+
+#area2:hover {
+    opacity: .3;
+}
